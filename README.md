@@ -25,7 +25,7 @@ Zuzanna Juszczak
 *Kaggle*  
 
 **Link do danych:**  
-`[https://...](https://www.kaggle.com/datasets/hayder17/breast-cancer-detection/data)`  
+https://www.kaggle.com/datasets/hayder17/breast-cancer-detection/data
 
 **Opis danych:**  
 - liczba próbek:  3383
