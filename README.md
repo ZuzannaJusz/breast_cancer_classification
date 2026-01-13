@@ -2,59 +2,43 @@
 
 ## **1. Informacje ogólne**
 **Nazwa projektu:**  
-*(np. Klasyfikacja wydźwięku w tweetach o wojnie)*  
+*Detekcja raka piersi*  
 
 **Autor:**  
-Imię i nazwisko  
+Zuzanna Juszczak  
 
 **Kierunek, rok i tryb studiów:**  
-*(np. Informatyka, semestr V)*  
+*Informatyka, semestr III, studia internetowe*  
 
 **Data oddania projektu:**  
-dd.mm.rrrr  
+14.01.2026 
 
 ---
 
 ## **2. Opis projektu**
-Krótki opis projektu – czego dotyczy, jaki problem rozwiązuje, w jakim kontekście może być użyteczny.  
-
-**Przykład:**  
-> Celem projektu jest klasyfikacja emocji w tekstach z mediów społecznościowych. Projekt pozwala na analizę nastrojów użytkowników Twittera dot. wojny z wykorzystaniem metod NLP i uczenia maszynowego.
-
+Celem projekty jest sklasyfikowanie obrazów mammograficznych jako łagodne lub złośliwe, wykorzystując trzy różne podejścia. Pierwszym podejściem jest klasyczny algorytm uczenia maszynowego oparty na ekstrakcji cech z obrazów. Wykorzystano PCA, radiomics oraz mix obu podejść, następnie trenowano dane przy użyciu Random Forest. Drugim podejściem jest zaimplementowanie sieci CNN. Trzecie podejście obejmuje model ViT aby wykorzystać nowe techniki głębokiego uczenia i sprawdzić czy osiągają wyższą dokładność.  
 ---
 
 ## **3. Dane**
 **Źródło danych:**  
-*(np. HuggingFace, Kaggle, własny zbiór danych)*  
+*Kaggle*  
 
 **Link do danych:**  
-`https://...`  
+`[https://...](https://www.kaggle.com/datasets/hayder17/breast-cancer-detection/data)`  
 
 **Opis danych:**  
-- liczba próbek:  
-- liczba cech / kolumn:  
-- format danych:  
-- rodzaj etykiet / klas:  
-- licencja:  
-
-
-**Uwaga dotycząca danych:**  
-Nie wrzucaj do repozytorium pełnego zbioru danych!  
-- Jeśli dane są duże, zamieść **jedynie niewielką próbkę** (np. 100–200 rekordów lub kilka obrazów / plików audio) w folderze `data/sample/`, aby pokazać strukturę danych.  
-- Pełen zbiór powinien być pobierany w kodzie (np. z HuggingFace lub Kaggle API) lub dostępny przez link w README.  
-- Dzięki temu repozytorium pozostanie czyste i zgodne z zasadami licencyjnymi.
+- liczba próbek:  3383
+- format danych:  obraz mammograficzny
+- rodzaj etykiet / klas:  0 - benign, 1 - malignant
+- licencja:  https://opendatacommons.org/licenses/dbcl/1-0/
 
 **Uwagi:**  
-*(np. dane zostały oczyszczone z duplikatów, usunięto brakujące wartości, itp.)*
+Dane zostały przeprocesowane do odpowiednich formatów względem każdego z algorytmów. Dla Random Forest dane przeszły redukcję wymiarowości, dla CNN oraz ViT zostały zmienione wielkości obrazów odpowiednio do wymiarów 128x128 oraz 224x224.
 
 ---
 
 ## **4. Cel projektu**
-Sprecyzuj cel biznesowy lub badawczy projektu:  
-- Co ma robić model?  
-- Jakie pytanie ma odpowiadać lub jaką klasyfikację przeprowadzać?  
-- Jakie decyzje lub wnioski można z projektu wyciągnąć?
-
+Model ma za zadanie wykryć czy obraz przedstawia guz łagodny czy złośliwy. Klasyfikatory oraz sieci neuronowe mogą być dodatkowym narzędziem diagnostycznym. 
 ---
 
 ## **5. Struktura projektu**
@@ -73,19 +57,19 @@ Projekt składa się z czterech głównych etapów, każdy w osobnym notatniku `
 Projekt obejmuje trzy różne podejścia do modelowania danych:
 
 ### **6.1 Model klasyczny ML**
-- Algorytm:  
+- Algorytm:  Random Forest
 - Krótki opis działania:  
 - Wyniki / metryki:  
 
 ### **6.2 Sieć neuronowa zbudowana od zera**
-- Architektura:  
+- Architektura:  CNN
 - Liczba warstw / neuronów:  
 - Funkcje aktywacji i optymalizator:  
 - Wyniki:  
 
 ### **6.3 Model transformerowy (fine-tuning)**
-- Nazwa modelu:  
-- Zastosowana biblioteka (np. HuggingFace Transformers):  
+- Nazwa modelu:  ViT
+- Zastosowana biblioteka: Torch 
 - Zakres dostosowania:  
 - Wyniki:  
 
