@@ -11,7 +11,7 @@ Zuzanna Juszczak
 *Informatyka, semestr III, studia internetowe*  
 
 **Data oddania projektu:**  
-14.01.2026 
+.01.2026 
 
 ---
 
