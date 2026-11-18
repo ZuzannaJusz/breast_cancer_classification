@@ -127,9 +127,4 @@ projekt_zum_2025/
 
 ---
 
-## **11. Licencja projektu**
-Projekt udostępniony na licencji:  
-*(np. MIT License, CC-BY 4.0, GPL-3.0)*  
-
-Źródło danych: zgodnie z licencją wskazaną w sekcji **Dane**.
 
