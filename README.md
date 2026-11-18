@@ -1,8 +1,8 @@
-*Detekcja raka piersi*  
+## **Detekcja raka piersi**
 
 --
 
-## *Opis projektu**
+## **Opis projektu**
 **Celem projektu jest sklasyfikowanie obrazów mammograficznych jako obrazy przedstawiające guzy łagodne lub złośliwe, wykorzystując trzy różne podejścia. Pierwszym podejściem jest klasyczny algorytm uczenia maszynowego oparty na ekstrakcji cech z obrazów. Wykorzystano PCA, radiomics oraz mix obu podejść, następnie trenowano dane przy użyciu Random Forest. Drugim podejściem jest zaimplementowanie sieci CNN. Trzecie podejście obejmuje model ViT aby wykorzystać nowe techniki głębokiego uczenia i sprawdzić czy osiągają wyższą dokładność.**
 
 ---
